@@ -13,7 +13,7 @@
     <defects>
       <xsl:for-each select="//o[starts-with(@base, '.') and count(o) = 1]">
         <xsl:variable name="inner" select="o[@base][1]"/>
-        <xsl:if test="not(starts-with($inner/@base, '.')) and empty($inner/text())">
+        <xsl:if test="not(starts-with($inner/@base, '.')) and empty($inner/text()) and $inner[not(eo:abstract(.))]">
           <defect>
             <xsl:variable name="line" select="eo:lineno(@line)"/>
             <xsl:attribute name="line">
