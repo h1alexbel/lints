@@ -105,42 +105,42 @@ Here is the result of linting XMIRs:
 <!-- benchmark_begin -->
 ```text
 Input: com/sun/jna/PointerType.class (S program)
-Lint time: 10791[ms]s (10791 ms)
+Lint time: 11515[ms]s (11515 ms)
 
 Input: com/sun/jna/Memory.class (M program)
-Lint time: 8123[ms]s (8123 ms)
+Lint time: 8996[ms]s (8996 ms)
 
 Input: com/sun/jna/Pointer.class (L program)
-Lint time: 9397[ms]s (9397 ms)
+Lint time: 9946[ms]s (9946 ms)
 
 Input: com/sun/jna/Structure.class (XL program)
-Lint time: 11499[ms]s (11499 ms)
+Lint time: 12441[ms]s (12441 ms)
 
 Input: org/apache/hadoop/hdfs/server/namenode/FSNamesystem.class (XXL program)
-Lint time: 40257[ms]s (40257 ms)
+Lint time: 50561[ms]s (50561 ms)
 
 
 
-unlint-non-existing-defect (XXL) (15561 ms)
-object-has-data (XXL) (12170 ms)
-unlint-non-existing-defect (XL) (5925 ms)
-unlint-non-existing-defect (L) (4827 ms)
-unlint-non-existing-defect (S) (4241 ms)
-unlint-non-existing-defect (M) (4067 ms)
-application-duality (XXL) (2803 ms)
-name-outside-of-abstract-object (XXL) (1599 ms)
-object-has-data (XL) (1027 ms)
-incorrect-bytes-format (XXL) (831 ms)
-line-is-absent (XXL) (675 ms)
-object-has-data (L) (650 ms)
-application-duality (XL) (620 ms)
-duplicate-names (XXL) (434 ms)
-object-has-data (S) (370 ms)
-object-has-data (M) (370 ms)
+unlint-non-existing-defect (XXL) (18597 ms)
+object-has-data (XXL) (16321 ms)
+unlint-non-existing-defect (XL) (6372 ms)
+unlint-non-existing-defect (L) (5078 ms)
+unlint-non-existing-defect (M) (4695 ms)
+unlint-non-existing-defect (S) (4369 ms)
+application-duality (XXL) (3188 ms)
+named-object-abstract-nested (XXL) (2047 ms)
+name-outside-of-abstract-object (XXL) (1765 ms)
+object-has-data (XL) (1052 ms)
+incorrect-bytes-format (XXL) (863 ms)
+line-is-absent (XXL) (747 ms)
+application-duality (XL) (610 ms)
+object-has-data (L) (533 ms)
+duplicate-names (XXL) (497 ms)
+name-outside-of-abstract-object (L) (403 ms)
 ```
 
 The results were calculated in [this GHA job][benchmark-gha]
-on 2025-04-08 at 01:38,
+on 2025-04-11 at 07:22,
 on Linux with 4 CPUs.
 <!-- benchmark_end -->
 
@@ -166,4 +166,4 @@ You will need [Maven 3.3+](https://maven.apache.org) and Java 11+ installed.
 
 [XMIR]: https://news.eolang.org/2022-11-25-xmir-guide.html
 [EO]: https://www.eolang.org
-[benchmark-gha]: https://github.com/objectionary/lints/actions/runs/14323132768
+[benchmark-gha]: https://github.com/h1alexbel/lints/actions/runs/14397806299
