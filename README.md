@@ -105,42 +105,42 @@ Here is the result of linting XMIRs:
 <!-- benchmark_begin -->
 ```text
 Input: com/sun/jna/PointerType.class (S program)
-Lint time: 10791[ms]s (10791 ms)
+Lint time: 11646[ms]s (11646 ms)
 
 Input: com/sun/jna/Memory.class (M program)
-Lint time: 8123[ms]s (8123 ms)
+Lint time: 8850[ms]s (8850 ms)
 
 Input: com/sun/jna/Pointer.class (L program)
-Lint time: 9397[ms]s (9397 ms)
+Lint time: 9854[ms]s (9854 ms)
 
 Input: com/sun/jna/Structure.class (XL program)
-Lint time: 11499[ms]s (11499 ms)
+Lint time: 12743[ms]s (12743 ms)
 
 Input: org/apache/hadoop/hdfs/server/namenode/FSNamesystem.class (XXL program)
-Lint time: 40257[ms]s (40257 ms)
+Lint time: 50714[ms]s (50714 ms)
 
 
 
-unlint-non-existing-defect (XXL) (15561 ms)
-object-has-data (XXL) (12170 ms)
-unlint-non-existing-defect (XL) (5925 ms)
-unlint-non-existing-defect (L) (4827 ms)
-unlint-non-existing-defect (S) (4241 ms)
-unlint-non-existing-defect (M) (4067 ms)
-application-duality (XXL) (2803 ms)
-name-outside-of-abstract-object (XXL) (1599 ms)
-object-has-data (XL) (1027 ms)
-incorrect-bytes-format (XXL) (831 ms)
-line-is-absent (XXL) (675 ms)
-object-has-data (L) (650 ms)
-application-duality (XL) (620 ms)
-duplicate-names (XXL) (434 ms)
-object-has-data (S) (370 ms)
-object-has-data (M) (370 ms)
+unlint-non-existing-defect (XXL) (19225 ms)
+object-has-data (XXL) (15184 ms)
+unlint-non-existing-defect (XL) (6516 ms)
+unlint-non-existing-defect (L) (5311 ms)
+unlint-non-existing-defect (S) (4669 ms)
+unlint-non-existing-defect (M) (4541 ms)
+application-duality (XXL) (3164 ms)
+named-object-abstract-nested (XXL) (2056 ms)
+name-outside-of-abstract-object (XXL) (1734 ms)
+object-has-data (XL) (1035 ms)
+incorrect-bytes-format (XXL) (848 ms)
+line-is-absent (XXL) (720 ms)
+application-duality (XL) (635 ms)
+bytes-without-data (XXL) (518 ms)
+duplicate-names (XXL) (500 ms)
+object-has-data (L) (405 ms)
 ```
 
 The results were calculated in [this GHA job][benchmark-gha]
-on 2025-04-08 at 01:38,
+on 2025-04-18 at 08:19,
 on Linux with 4 CPUs.
 <!-- benchmark_end -->
 
@@ -168,4 +168,4 @@ it is version `0.8.0`+.
 
 [XMIR]: https://news.eolang.org/2022-11-25-xmir-guide.html
 [EO]: https://www.eolang.org
-[benchmark-gha]: https://github.com/objectionary/lints/actions/runs/14323132768
+[benchmark-gha]: https://github.com/h1alexbel/lints/actions/runs/14532138396
