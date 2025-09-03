@@ -105,42 +105,42 @@ Here is the result of linting XMIRs:
 <!-- benchmark_begin -->
 ```text
 Input: com/sun/jna/PointerType.class (S source)
-Lint time: 4s (4446 ms)
+Lint time: 5s (4774 ms)
 
 Input: com/sun/jna/Memory.class (M source)
-Lint time: 5s (4951 ms)
+Lint time: 6s (6216 ms)
 
 Input: com/sun/jna/Pointer.class (L source)
-Lint time: 6s (6035 ms)
+Lint time: 10s (10455 ms)
 
 Input: com/sun/jna/Structure.class (XL source)
-Lint time: 7s (7342 ms)
+Lint time: 20s (19733 ms)
 
 Input: org/apache/hadoop/hdfs/server/namenode/FSNamesystem.class (XXL source)
-Lint time: 20s (20040 ms)
+Lint time: 5min (282699 ms)
 
 
 
-unlint-non-existing-defect (XXL) (9925 ms)
-unlint-non-existing-defect (XL) (3628 ms)
-unlint-non-existing-defect (L) (2983 ms)
-unlint-non-existing-defect (M) (2435 ms)
-unlint-non-existing-defect (S) (2194 ms)
-application-duality (XXL) (1555 ms)
-object-has-data (XXL) (1273 ms)
-named-object-abstract-nested (XXL) (980 ms)
-name-outside-of-abstract-object (XXL) (805 ms)
-incorrect-bytes-format (XXL) (418 ms)
-line-is-absent (XXL) (354 ms)
-application-duality (XL) (313 ms)
-bytes-without-data (XXL) (276 ms)
-duplicate-names (XXL) (268 ms)
-object-has-data (XL) (263 ms)
-named-object-abstract-nested (XL) (197 ms)
+unlint-non-existing-defect (XXL) (137361 ms)
+duplicate-names-in-diff-context (XXL) (134898 ms)
+unlint-non-existing-defect (XL) (9410 ms)
+duplicate-names-in-diff-context (XL) (6491 ms)
+unlint-non-existing-defect (L) (5032 ms)
+unlint-non-existing-defect (M) (3039 ms)
+unlint-non-existing-defect (S) (2321 ms)
+duplicate-names-in-diff-context (L) (2265 ms)
+application-duality (XXL) (1653 ms)
+object-has-data (XXL) (1293 ms)
+named-object-abstract-nested (XXL) (984 ms)
+name-outside-of-abstract-object (XXL) (802 ms)
+duplicate-names-in-diff-context (M) (479 ms)
+incorrect-bytes-format (XXL) (419 ms)
+line-is-absent (XXL) (384 ms)
+application-duality (XL) (333 ms)
 ```
 
 The results were calculated in [this GHA job][benchmark-gha]
-on 2025-05-05 at 14:53,
+on 2025-05-08 at 11:15,
 on Linux with 4 CPUs.
 <!-- benchmark_end -->
 
@@ -173,4 +173,4 @@ just install it and make sure it's in your `PATH`
 
 [XMIR]: https://news.eolang.org/2022-11-25-xmir-guide.html
 [EO]: https://www.eolang.org
-[benchmark-gha]: https://github.com/objectionary/lints/actions/runs/14839302036
+[benchmark-gha]: https://github.com/h1alexbel/lints/actions/runs/14904945824
